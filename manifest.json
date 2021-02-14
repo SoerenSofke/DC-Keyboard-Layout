@@ -6,69 +6,12 @@
 
   "background": {
     "scripts": [
-      "keyboard.min.js",
       "main.js"
     ]
   },
   "permissions": [
     "input"
   ],
-  "commands": {
-    "ArrowUp": {
-      "description": "Pfeil hoch 🡅",
-      "suggested_key": {
-        "default": "Alt+I"
-      }
-    },
-    "ArrowDown": {
-      "description": "Pfeil runter 🡇",
-      "suggested_key": {
-        "default": "Alt+K"
-      }
-    },
-    "ArrowLeft": {
-      "description": "Pfeil links 🡄",
-      "suggested_key": {
-        "default": "Alt+J"
-      }
-    },
-    "ArrowRight": {
-      "description": "Pfeil rechts 🡆",
-      "suggested_key": {
-        "default": "Alt+L"
-      }
-    },
-    "10-home": {
-      "description": "Zum Zeilenanfang"
-    },
-    "11-end": {
-      "description": "Zum Zeilenende"
-    },
-    "Delete": {
-      "description": "Löschtaste (Alt+O)"
-    },
-    "Backspace": {
-      "description": "Rücktaste (Alt+U)"
-    },
-    "Enter": {
-      "description": "Eingabetaste (Alt+M)"
-    },
-    "50-killend": {
-      "description": "Lösche bis zum Zeilenende"
-    },
-    "60-cut": {
-      "description": "Ausschneiden"
-    },
-    "61-paste": {
-      "description": "Einfügen"
-    },
-    "90-original-ctrl-f": {
-      "description": "Original Ctrl+F"
-    }
-  },
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",
