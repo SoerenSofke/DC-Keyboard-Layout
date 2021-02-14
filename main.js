@@ -70,43 +70,54 @@ chrome.input.ime.onKeyEvent.addListener(
           case 'KeyD':
             isShift = true
             return true
-            
+
           case 'KeyJ':
             sendEvent('ArrowLeft', isShift, isCtrl);
             return true
             
+
           case 'KeyL':
             sendEvent('ArrowRight', isShift, isCtrl);
             return true
+
+            
             
           case 'KeyI':
             if (isCtrl) {
               sendEvent('End')
               sendEvent('Enter')
+              sendEvent('KeyZ')// dummy key
+              sendEvent('Home', true) //
+              sendEvent('Home', true) //
+              sendEvent('Delete', true) //
               sendEvent('ArrowUp', true)
               sendEvent('KeyX', false, true)
-              sendEvent('Backspace')
-              sendEvent('End')
-              sendEvent('Home')
-              sendEvent('Home')
+              sendEvent('Delete')
+              sendEvent('ArrowUp')
               sendEvent('KeyV', false, true)
               sendEvent('ArrowUp')
               sendEvent('End')
               sendEvent('Home')
+
             } else {
               sendEvent('ArrowUp', isShift);
             }
+
             return true
-            
           case 'KeyK':
             if (isCtrl) {
               sendEvent('End')
               sendEvent('Enter')
+              sendEvent('KeyZ')// dummy key
+              sendEvent('Home', true) //
+              sendEvent('Home', true) //
+              sendEvent('Delete', true) //
               sendEvent('ArrowUp', true)
               sendEvent('KeyX', false, true)
               sendEvent('Delete')
               sendEvent('End')
               sendEvent('Enter')
+              sendEvent('Home')
               sendEvent('KeyV', false, true)
               sendEvent('Backspace')
               sendEvent('Home')
