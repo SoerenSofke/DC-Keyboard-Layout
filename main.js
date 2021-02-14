@@ -133,7 +133,11 @@ chrome.input.ime.onKeyEvent.addListener(
           return true
 
         case 'KeyU':
-          sendEvent('Backspace', false, isCtrl);
+          if (isShift) {
+            sendEvent('KeyX', false, true)  
+          } else {
+            sendEvent('Backspace');    
+          }
           return true
 
         case 'KeyO':
@@ -173,7 +177,11 @@ chrome.input.ime.onKeyEvent.addListener(
         case 'KeyS':
           sendEvent('KeyY', false, true)
           return true
-
+            
+        case 'KeyM':
+            sendEvent('KeyV', false, true)
+            return true    
+            
         default:
           return false
       }
